@@ -36,8 +36,11 @@ public class task_2 {
 
 			arrayOfLines = line.split(" ");
 
-			System.out.println(arrayOfLines.length);
-		} catch (IOException e) {
+			if (arrayOfLines[0].length() == 0)
+				System.out.println(0);
+			else System.out.println(arrayOfLines.length);
+		}
+		catch (IOException e) {
 			e.printStackTrace();
 		}
 	}
